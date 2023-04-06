@@ -1,0 +1,31 @@
+Sudoku genereerimise ja lahendamise programm
+
+Projekti üldine kirjeldus- mida teeb, milline välja näeb, kasutajapoolsed võimalused, millises keeles projekti kirjutatakse, üldised jooned, mida koodis jälgida, et uus silmapaar saaks aru
+Suuremad osad, mis on vaja tööle saada
+Väiksemad osad, mis teevad kas koodist arusaamise või kasutajapoolse kogemuse sujuvamaks
+
+Sudoku generaator kasutaja jaoks:
+Uus kasutaja saab liituda kasutajanime ja parooliga
+Lahendamisel võtab programm aega ja lõpus kuvab ajalise edetabeli
+Genereeritakse klassikaline 9x9 sudoku
+Kasutaja saab ise lahendada, lisa:hiljem lahendust vaadata
+Vale numbri sisestamisel muudab number värvi
+Saab alustada uue sudokuga soovi korral või välja logida/mängimise lõpetada
+Mida arenduse poolt on vaja:
+Programm peab meelde jätma ja võimaldama uutel kasutajatel liitumist
+Programm, mis genereerib sudoku, pidades silmas sudoku-välja reegleid
+Võimaldab kasutajal andmeid sisestada ja hiljem kas kontrollib või pakub lahendust
+Kasutajaliides
+Lisa: kasutajal on võimalik valida suuremat/väiksemat välja
+Lisa: kasutajal on võimalik valida erinevate raskusastmete vahel
+
+Suuremad otsused:
+Keel- Python
+Ajakava 
+3-9 aprill: töötav sudokugeneraator
+10-16 aprill: töötav kasutajaliides
+17-23 aprill: meiepoolsed lisad 
+23 aprill vahearuande esitamine
+24-30 aprill: viimistlused
+Mais aruande koostamine, esitluse ettevalmistamine
+Tööjaotus: hetkel kuna grupi liikmete tugevused ning nõrkused pole teada alustame kõik koos vastavalt võimalustele programmi koostamisega ning loodame, et kõik saavad piisavalt väljundit. Kuna töötame ka erinevate branchidega saame nõu küsida teiste grupi liikmete käest. Selleks, et tempos püsida ning hiljem aruandeid koostada peame ka ülevaadet tehtud töödest ja tähtaegadest eraldi dokumendis.
