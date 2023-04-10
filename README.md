@@ -4,8 +4,8 @@ Projekt kirjutatakse Python 3.0 keeles.
 
 Mida arenduse poolt on vaja:
 Programm peab meelde jätma ja võimaldama uutel kasutajatel liitumist
-Programm, mis genereerib sudoku, pidades silmas sudoku-välja reegleid
-Võimaldab kasutajal andmeid sisestada ja hiljem kas kontrollib või pakub lahendust
+Genereeritakse sudoku, pidades silmas sudoku-välja reegleid
+Võimaldatakse kasutajal andmeid sisestada ja hiljem kas kontrollitakse või pakutakse lahendust
 
 Sudoku generaatori töötamine kasutaja vaatepunktist:
 Uus kasutaja saab liituda kasutajanime ja parooliga
