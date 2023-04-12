@@ -8,5 +8,5 @@ for i in range(sisesta_väli): #selles osas tuleks anda väljal numbrid
     for j in range(sisesta_väli):
         väli[i][j] = 0
 
-for read in väli: #prinditakse(praegu töö testimiseks
+for read in väli: #prinditakse(praegu töö testimiseks)
     print(read)
