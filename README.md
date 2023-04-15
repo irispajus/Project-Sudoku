@@ -13,4 +13,4 @@ Genereeritakse klassikaline 9x9 sudoku
 Kasutaja saab ise lahendada
 Saab alustada uue sudokuga soovi korral või välja logida/mängimise lõpetada
 
-Kood on kommenteeritud piisavalt ja asjakohaselt kommenteeritud, eriti arvestades seda, et liikmed, kes pole koodi kirjutanud, saaksid aru, mis mingi koodi osa teeb.
+Kood on kommenteeritud piisavalt ja asjakohaselt, eriti arvestades seda, et liikmed, kes pole koodi kirjutanud, saaksid aru, mis mingi koodi osa teeb.
