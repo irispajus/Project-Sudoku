@@ -1,0 +1,75 @@
+sisesta_väli = 3 #kasutaja saab defineerida mis suuruses mänguväljaga on tegu
+
+välja_suurus = sisesta_väli ** 2 #sisestatud number võetakse astmesse 2
+väli = [[0 for _ in range(välja_suurus)] for _ in range(välja_suurus)] #luuakse väli
+
+#sudoku reeglid: ühes reas ja veerus ei tohi sama number korduda
+
+def kontrollin_väärtuste_sobivust (väli, rida, veerg, väärtus):
+    for i in range(välja_suurus): 
+        for j in range(välja_suurus):
+            if väli[rida][i] == väärtus or väli[i][veerg] == väärtus:
+                return False
+            
+        #väiksemas väljas ei tohi samuti numbrid korduda
+
+    pisiväli_suurus = int(väli ** 0.5)
+    read = (rida // pisivälja_suurus) * pisivälja_suurus
+    veerud = (veerg // pisiväli_suurus) * pisiväli_suurus
+    for i in range(read, read + pisiväli_suurus):
+        for j in range(veerud, veerud + pisiväli_suurus):
+            if väli [i][j] == value:
+                return False
+    return True
+
+#väärtusete kontrollimine ja lahendamine 
+
+def lahenda (väli):
+    for rida in range(välja_suurus):
+        for veerg in range(välja_suurus):
+            if väli[rida][veerg] == 0:
+                for väärtus in range (1, välja_suurus+1):
+                    if kontrollin_väärtuste_sobivust (väli, rida, veerg, väärtus):
+                        väli[rida][veerg] = väärtus
+                        if lahenda (väli):
+                            return True
+                        väli[rida][veerg] = 0
+                return False
+    return True
+
+#mänguvälja genereerimine
+
+def genereeri (väli):
+    lahenda (väli)
+    for i in range (välja_suurus):
+        for j in range (välja_suurus):
+            if random.random () < 0.5:
+                ajutine = väli[i][j]
+                väli[i][j] = 0
+                if not ainult_üks_lahendus (väli):
+                    väli[i][j] = ajutine
+
+def ainult_üks_lahendus (väli):
+    kirjuta_väli = [rida[:] for rida in väli]
+    lahenda (kirjuta_väli)
+    for i in range (välja_suurus):
+        for j in range (välja_suurus):
+            if kirjuta_väli [i][j] == 0:
+                for väärtus in range (1, välja_suurus + 1):
+                    if kontrollin_väärtuste_sobivust (väli, rida, veerg, väärtus):
+                        väli[rida][veerg] = väärtus
+                        if lahenda(väli):
+                            return True
+                        väli [rida][veerg] = 0
+                return False
+    return True        
+
+genereeri(väli)
+
+
+for read in väli: #prinditakse(praegu töö testimiseks)
+    for väärtus in rida:
+        print (väärtus, end= ' ')
+    print()
+
+
