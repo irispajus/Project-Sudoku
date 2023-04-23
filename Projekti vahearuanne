@@ -1,0 +1,17 @@
+
+Praeguseks hetkeks on meil olemas töötav kood, mis genereerib klassikalise 9x9 sudoku. 
+
+Järgnevateks sammudeks on: 
+Sudoku täiustamine, selleks et vale numbri sisestamisel muudaks number värvi. 
+Kasutajaliidese tegemine, selleks, et uus kasutaja saaks liituda kasutajanime ja parooliga  ja hiljem oma lahendatud sudokut vaadata ning saab alustada uue sudokuga soovi korral või välja logida/mängimise lõpetada.
+
+Mida arenduse poolt on vaja veel teha:
+Programm, mis  peab meelde jätma ja võimaldama uutel kasutajatel liitumist
+Kasutajaliidese ja programmi ühendamine
+
+Probleemid, murekohad:
+Kasutajaliidese rakendamisega on jama, millega vaja tegeleda.
+Raske on leida ühist aega projekti üle arutamiseks. 
+Tööjaotus on organiseerimata, mistõttu liikmetel puuduvad otsesed kohustused, aga üritame seda parandada.
+
+
