@@ -1,0 +1,15 @@
+{
+  "name": "My Codespace",
+  "image": "python:3.9",
+  "extensions": [
+    "ms-python.python"
+  ],
+  "runArgs": [
+    "--no-sandbox"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y python3-tk"
+}
