@@ -1,3 +1,4 @@
+import random
 sisesta_väli = 3 #kasutaja saab defineerida mis suuruses mänguväljaga on tegu
 
 välja_suurus = sisesta_väli ** 2 #sisestatud number võetakse astmesse 2
@@ -13,12 +14,12 @@ def kontrollin_väärtuste_sobivust (väli, rida, veerg, väärtus):
             
         #väiksemas väljas ei tohi samuti numbrid korduda
 
-    pisiväli_suurus = int(väli ** 0.5)
-    read = (rida // pisivälja_suurus) * pisivälja_suurus
+    pisiväli_suurus = int(välja_suurus ** 0.5)
+    read = (rida // pisiväli_suurus) * pisiväli_suurus
     veerud = (veerg // pisiväli_suurus) * pisiväli_suurus
     for i in range(read, read + pisiväli_suurus):
         for j in range(veerud, veerud + pisiväli_suurus):
-            if väli [i][j] == value:
+            if väli [i][j] == väärtus:
                 return False
     return True
 
@@ -68,7 +69,7 @@ genereeri(väli)
 
 
 for read in väli: #prinditakse(praegu töö testimiseks)
-    for väärtus in rida:
+    for väärtus in read:
         print (väärtus, end= ' ')
     print()
 
