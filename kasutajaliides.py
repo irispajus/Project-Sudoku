@@ -148,5 +148,5 @@ class SudokuGUI(CTk):
 
 
 # Create an instance of the SudokuGUI class and run the main loop
-gui = SudokuGUI()
-gui.mainloop()
+#gui = SudokuGUI()
+#gui.mainloop()
