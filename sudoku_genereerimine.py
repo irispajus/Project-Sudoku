@@ -1,4 +1,9 @@
+#########################
+#   Credit: Iris Pajus  #
+#########################
 import random
+
+# For terminal-based ui:
 #---------------------------------------kysi_valja_suurust---------------------------------------#
 # Kasutaja saab valida, kui palju numbreid väljalt eemaldatakse
 def kysi_raskusaste ():
@@ -28,6 +33,7 @@ def kontrollin_vaartuste_sobivust (vali, rida, veerg, vaaartus):
     return True   
 #----------------------------------kontrollin_vaartuste_sobivust---------------------------------#
 
+# For terminal-based ui:
 #-------------------------------------------lahenda----------------------------------------------#
 def lahenda (vali):
     for rida in range(valja_suurus):
@@ -86,10 +92,5 @@ def main ():
     genereeri(vali)
     # Eemalda numbreid vastavalt raskusastmele
     #vali = tyhjenda(vali, tase)
-    #for read in vali: #prinditakse(praegu töö testimiseks)
-    #    for vaartus in read:
-    #        print (vaartus, end= ' ')
-    #    print()
     return vali
 ############################################## MAIN ###############################################
-#main(3)
