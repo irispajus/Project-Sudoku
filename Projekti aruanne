@@ -1,0 +1,30 @@
+Projekti aruanne
+
+Projekti eesmärgiks oli luua programm, mis loob sudoku välja ning laseb kasutajal seda lahendada. Projekti alustati programmijupi kirjutamisest, mis genereeriks sudokuvälja. Tuli kirjutada programmi osa, mis täidaks kasutajaliidese rolli ning laseks mängijal genereeritud sudokut ise lahendada ning siduma selle koodiga, mis kontrolliks kas sisestatud numbrid vastavad sudoku reeglitele. Mängijal on võimalik valida erinevate raskusastmete vahel ning kontrollida kas tema lahendus on õige.
+
+Teostatud tööde kirjeldus:
+Kasutajaliides.py- loob GUI akna ning kuvab seal nupud, mida mängija saab kasutada raskusastme valimiseks. Vastavalt raskusastmele kuvatakse kas suurem või väiksem sudokuväli. Mängija saab lahendada sudokut kirjutades numbreid tühjadele kohtadele, kontrollida kas tegu on õige vastusega või mitte. 
+Sudoku.py- käivitab  kasutajaliidese
+Sudoku_genereerimine.py- genereerib sudokuvälja, kontrollib et sudoku reeglid oleks täidetud ning et oleks võimalik lahendada sudokut ainult ühte moodi.
+
+Rühmaliikmete panused:
+Erki- täiendas sudoku genereerimise programmi ning kontrollis, et see töötaks, kirjutas sudoku.py 
+Sirli- täiendas projekti kirjeldust, pani kokku avamenüü, täiendas projekti aruannet
+Iris- kirjutas algse sudoku genereerimise programmi ja alustas kasutajaliidesega, kirjutas algse programmi kirjelduse ja aruande
+Anette- kirjutas projekti vahearuande, lõi ajavõtusüsteemi
+
+Projekti tugevused ja nõrkused:
++  Täitsime projekti peamise eesmärgi- võimaldada sudoku lahendamine
++  Olemasolevad projekti osad töötavad
+-  Sudokusid saab lahendada ka ilma kontot loomata
+-  Hetkel saab kasutada “Solve” nuppu ja selle lahendusega kontrollida tulemust, mis on suur bug.
+
+Tulevikuplaanid:
+Luua sisselogimisaken
+Võimaldada kasutajate ja paroolide salvestamine
+Muuta GUI kasutajasõbralikumaks
+
+
+Tekkinud probleemid, mida projekti kirjutamisel pidime lahendama:
+. Ajaplaneerimine- aja planeerimine ja leidmine oli grupi D üks suurematest probleemidest, mida tuli projekti valmimisel jälgida.
+. Vahel ei saanud koodi tööle ning puudusid oskused kuidas saada jagu tehnilistest probleemidest, näiteks customtkinteri GUI installimine ja tööle saamine. Juhul kui ühel rühma liikmel tekkisid probleemid võis aega milla enne kui teised lahenduse leidsid. 
