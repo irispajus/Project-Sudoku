@@ -66,13 +66,13 @@ class SudokuGUI(CTk):
     # Overwrite with the initial board
     def solve(self):
         # Remove the ability to check a solved board
-        #self.check_fields_button.destroy()
-        #self.show_solution_button.destroy()
-        #totalTime = getSpentTime(time)
-        #self.time_spent = CTkLabel(self.buttons_frame, text="Mission failed...\nTime spent: " + str(totalTime), font=("Verdana", 12))
-        #self.time_spent.pack(pady=10)
-        #self.menu_button = CTkButton(self.buttons_frame, text="Back to menu", command=self.backToMenu)
-        #self.menu_button.pack(pady=5)
+        self.check_fields_button.destroy()
+        self.show_solution_button.destroy()
+        totalTime = getSpentTime(time)
+        self.time_spent = CTkLabel(self.buttons_frame, text="Mission failed...\nTime spent: " + str(totalTime), font=("Verdana", 12))
+        self.time_spent.pack(pady=10)
+        self.menu_button = CTkButton(self.buttons_frame, text="Back to menu", command=self.backToMenu)
+        self.menu_button.pack(pady=5)
         solved_board = self.full_board
         self.disable_check_button = True
         # Solve the game board
